@@ -1,6 +1,6 @@
 node {
    stage('Checkout Code') {
-      git 'https://github.com/jekhokie/scriptbox.git'
+      git 'https://github.com/kcharusheela/hello_world.git'
    }
    stage('Unit Test') {
       // run the unit tests

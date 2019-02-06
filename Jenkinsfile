@@ -4,10 +4,10 @@ node {
    }
    stage('Unit Test') {
       // run the unit tests
-      dir("python--flask-hello-world") {
+      dir("hello_world") {
          sh "virtualenv .env"
          sh ". .env/bin/activate"
-         sh "pip install -r hello_world/requirements.txt"
+         sh "pip install -r requirements.txt"
          sh "python -m pytest tests/test_app.py"
       }
    }

@@ -7,7 +7,7 @@ node {
       dir("python--flask-hello-world") {
          sh "virtualenv .env"
          sh ". .env/bin/activate"
-         sh "pip install -r requirements.txt"
+         sh "pip install -r hello_world/requirements.txt"
          sh "python -m pytest tests/test_app.py"
       }
    }
